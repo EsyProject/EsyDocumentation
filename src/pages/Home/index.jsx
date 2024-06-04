@@ -131,7 +131,7 @@ export default function Home() {
                         <div className="slide-track">
                             {[...Array(18)].map((_, index) => (
                                 <div className="slide" key={index}>
-                                    <img src={`../../assets/images/image-${index % 6 + 1}.png`} alt="" />
+                                    <img src={`/assets/images/image-${index % 6 + 1}.png`} alt="" />
                                 </div>
                             ))}
                         </div>
