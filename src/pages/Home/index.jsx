@@ -35,7 +35,7 @@ export default function Home() {
             <div className="navbar">
                 <div className="navbar-area">
                     <div className="logotype">
-                        <p className="bosch">Byanka</p>
+                        <p className="bosch">BOSCH</p>
                         <p className="esy">ESY</p>
                     </div>
 
