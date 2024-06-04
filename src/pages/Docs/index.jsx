@@ -1,7 +1,4 @@
-import { React, useState } from "react";
-import LocalButton from "../../assets/components/LocalButton";
-import { Link } from "react-router-dom";
-
+import { useState } from "react";
 import { GrSearch } from "react-icons/gr"; // import para a lupinha de pesquisa
 import { IoMoonOutline } from "react-icons/io5"; // para a lua
 import { IoSunnyOutline } from "react-icons/io5"; // para o sol

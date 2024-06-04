@@ -1,14 +1,7 @@
-import { React, useState } from "react";
-import LocalButton from "../../assets/components/LocalButton";
-import { Link } from "react-router-dom";
-
+import { useState } from "react";
 import { AiOutlineRight } from 'react-icons/ai';
 
 import "./style.css";
-
-import { GrSearch } from "react-icons/gr"; // import para a lupinha de pesquisa
-import { IoMoonOutline } from "react-icons/io5"; // para a lua
-import { IoSunnyOutline } from "react-icons/io5"; // para o sol
 
 export default function Home() {
     const handleClick = () => {
@@ -69,7 +62,7 @@ export default function Home() {
 
                 <section className="container-section-1">
                     <div className="container-section-child">
-                        <img src="\assets\images\event_creation_screen.png" alt="scr" />
+                        <img src="/assets/images/event_creation_screen.png" alt="scr" />
                         <text>
                             <h2>Criação de eventos</h2>
                             <p>Em apenas uma única tela é possível criar um evento e já disponibilizá-lo aos colaboradores da sua equipe.</p>
@@ -82,10 +75,10 @@ export default function Home() {
                                 participação, feedback e pontos de destaque, ajudando os gestores a entenderem melhor o impacto de suas
                                 iniciativas.</p>
                         </text>
-                        <img src="\assets\images\event_analysis_dashboard_default_state.png" alt="scr" />
+                        <img src="/assets/images/event_analysis_dashboard_default_state.png" alt="scr" />
                     </div>
                     <div className="container-section-child">
-                        <img src="\assets\images\ticket_reservation_screen_contracted.png" alt="scr" />
+                        <img src="/assets/images/ticket_reservation_screen_contracted.png" alt="scr" />
                         <text>
                             <h2>Reserva prévia do ticket e autenticação do participante na entrada do evento</h2>
                             <p>A reserva antecipada de ingressos e a autenticação na entrada garantem uma experiência fluida e segura
@@ -98,7 +91,7 @@ export default function Home() {
                             <p>Um calendário interno lista todos os eventos disponíveis no mês, facilitando a coordenação de atividades,
                                 gerenciamento e otimização do tempo.</p>
                         </text>
-                        <img src="\assets\images\schedule_screen.png" alt="scr" />
+                        <img src="/assets/images/schedule_screen.png" alt="scr" />
                     </div>
                 </section>
                 <section className="container-section-2">
@@ -138,7 +131,7 @@ export default function Home() {
                         <div className="slide-track">
                             {[...Array(18)].map((_, index) => (
                                 <div className="slide" key={index}>
-                                    <img src={`/assets/images/image-${index % 6 + 1}.png`} alt="" />
+                                    <img src={`../../assets/images/image-${index % 6 + 1}.png`} alt="" />
                                 </div>
                             ))}
                         </div>
