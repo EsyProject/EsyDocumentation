@@ -523,7 +523,7 @@ main section img {
 .container-section-4 .image-faq-container {
     width: 50%;
     height: 420px;
-    background-image: url('src/assets/images/image-faq-light.png');
+    background-image: url('/assets/images/image-faq-light.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -623,7 +623,7 @@ footer .logo-footer> :first-child {
     }
 
     .container-section-4 .image-faq-container {
-        background-image: url('src/assets/images/image-faq-dark.png');
+        background-image: url('/assets/images/image-faq-dark.png');
     }
 
     .container-section-3 h1 {
@@ -679,13 +679,13 @@ footer .logo-footer> :first-child {
 
     @media (prefers-color-scheme: light) {
         .container-section-4 .image-faq-container {
-            background-image: url('src/assets/images/image-faq-light.png');
+            background-image: url('/assets/images/image-faq-light.png');
         }
     }
 
     @media (prefers-color-scheme: dark) {
         .container-section-4 .image-faq-container {
-            background-image: url('src/assets/images/image-faq-dark.png');
+            background-image: url('/assets/images/image-faq-dark.png');
         }
     }
 
