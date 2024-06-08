@@ -461,7 +461,6 @@ main section img {
 
 .container-section-4 .faq-container .menu-item {
     align-self: flex-start;
-
     cursor: pointer;
     padding: 30px 0;
     border-bottom: 1px solid #70707067;
@@ -475,6 +474,26 @@ main section img {
     font-weight: 500;
     transition: color 0.3s;
     text-transform: none;
+}
+
+@media screen and (max-width: 660px) {
+    .container-section-4 .faq-container .menu-item .sub-menu {
+        display: none;
+        padding-left: 20px;
+    }
+
+    .container-section-4 .faq-container .menu-item p {
+        font-size: 18px;
+        text-align: left;
+        max-width: 83%;
+        line-height: 30px;
+    }
+
+    .container-section-4 .faq-container .menu-item.active p,
+    .container-section-4 .faq-container .menu-item p:hover {
+        font-size: 18px !important;
+        text-align: left;
+    }
 }
 
 .container-section-4 .faq-container .menu-item .sub-menu {
@@ -635,7 +654,7 @@ footer .logo-footer> :first-child {
         color: #dadada;
         -webkit-text-stroke: 1.3px #dadada;
     }
-    
+
     footer .logo-footer> :first-child {
         -webkit-text-stroke: 0.8px #dadada;
         color: transparent;
@@ -728,7 +747,8 @@ footer .logo-footer> :first-child {
         gap: 20px;
     }
 
-    .container-section-1 :nth-last-child(3), .container-section-1 :nth-last-child(1) {
+    .container-section-1 :nth-last-child(3),
+    .container-section-1 :nth-last-child(1) {
         flex-direction: column-reverse;
     }
 
