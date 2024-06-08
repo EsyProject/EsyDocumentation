@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AiOutlineRight } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 import "./style.css";
 
@@ -16,11 +17,11 @@ export default function Devs() {
     };
 
 
-    //teste de burguer
-    const [isOpen, setIsOpen] = useState(false);
+    // configs do menu hamburguer
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsOpen(!isOpen);
+        setMenuOpen(!menuOpen);
     };
 
     return (
@@ -32,25 +33,68 @@ export default function Devs() {
                         <p className="esy">ESY</p>
                     </div>
 
-                    <div className={`links ${isOpen ? 'open' : ''}`}>
-                        <a href="#">Docs</a>
-                        <a href="#">Guia do Usuário</a>
-                        <a href="#">Desenvolvedores</a>
-                    </div>
-
-                    <div className="hamburger" onClick={toggleMenu}>
-                        &#9776;
+                    <div className={`app ${menuOpen ? 'overlay' : ''}`}>
+                        <div className="hamburger" onClick={toggleMenu}>
+                            {menuOpen ? ' ' : '☰'}
+                        </div>
+                        <div className={`links ${menuOpen ? 'open' : ''}`}>
+                            <div className="hamburger" onClick={toggleMenu}>
+                                {menuOpen ? '✕' : '☰'}
+                            </div>
+                            <Link to="/">Home</Link>
+                            <Link to="/devs">Documentação</Link>
+                            <Link to="/devs">Desenvolvedores</Link>
+                        </div>
                     </div>
                 </div>
             </div>
             <main>
                 <h1 className="our-time">Nosso time</h1>
-                <p>Para que o Software Esy se tornasse uma realidade, nossa equipe se formou e trabalhou em conjunto com dedicação e empenho. 
-                    Foi através desse esforço colaborativo que conseguimos transformar essa ideia em um produto tangível. Nossa união e 
-                    compromisso foram fundamentais para superar desafios e concretizar esse projeto. Assim, o Esy não apenas saiu do papel, 
+                <p>Para que o Software Esy se tornasse uma realidade, nossa equipe se formou e trabalhou em conjunto com dedicação e empenho.
+                    Foi através desse esforço colaborativo que conseguimos transformar essa ideia em um produto tangível. Nossa união e
+                    compromisso foram fundamentais para superar desafios e concretizar esse projeto. Assim, o Esy não apenas saiu do papel,
                     mas também ganhou vida graças ao trabalho árduo e à sinergia de todos os envolvidos. Conheça-nos melhor!</p>
-            </main>
 
+                <div className="container-devs">
+                    <div className="child">
+                        <img src="/assets/images/bruno.png" />
+                        <h1 className="dev-name">Bruno Gomes</h1>
+                        <h2 className="dev-function">Dev Full Stack</h2>
+                        <p className="dev-bio">Sempre gostei muito de tudo que envolvia criatividade e
+                            desafios, foi assim que cheguei nas áreas de UX e Dev. Participar do ESY me fez
+                            evoluir e aprimorar minhas capacidades, além disso, dia após dia atuando, tive
+                            cada vez mais certeza que é essa a minha vocação.</p>
+                    </div>
+                    <div className="child">
+                        <img src="/assets/images/kety.png" />
+                        <h1 className="dev-name">Kethelyn Santos</h1>
+                        <h2 className="dev-function">Dev Front End</h2>
+                        <p className="dev-bio">Desde o começo, mesmo sem conhecer muito sobre
+                            a área tech, os projetos com foco no frontend atraíram minha atenção
+                            e me fizeram buscar mais conhecimento. Trabalhar com o ESY me fez
+                            crescer e acreditar mais no meu potencial.</p>
+                    </div>
+                    <div className="child">
+                        <img src="/assets/images/joao.png" />
+                        <h1 className="dev-name">João Silva</h1>
+                        <h2 className="dev-function">Dev Front End</h2>
+                        <p className="dev-bio">O Esy foi um desafio para mim, porém, através dele,
+                            aprendi, me desenvolvi e melhorei meus conhecimentos. Esy não é apenas um
+                            software, é um reflexo da nossa paixão e compromisso com a inovação. Durante
+                            esta jornada, apliquei e expandi meus conhecimentos técnicos e habilidades
+                            sociais.</p>
+                    </div>
+                    <div className="child">
+                        <img src="/assets/images/manu.png" />
+                        <h1 className="dev-name">Manuela Souza</h1>
+                        <h2 className="dev-function">UI/UX Designer e Dev Front End</h2>
+                        <p className="dev-bio">Sempre gostei muito de tudo que envolvia criatividade e
+                            desafios, foi assim que cheguei nas áreas de UX e Dev. Participar do ESY me fez
+                            evoluir e aprimorar minhas capacidades, além disso, dia após dia atuando, tive
+                            cada vez mais certeza que é essa a minha vocação.</p>
+                    </div>
+                </div>
+            </main>
             <footer>
                 <div className="logo-footer">
                     <p>BOSCH</p>
@@ -60,7 +104,7 @@ export default function Devs() {
                     <p>© Robert Bosch Ltda. 2024, todos os direitos reservados</p>
                 </div>
                 <div className="contact">
-                    <p>Esy.bosch.br@gmail.com</p>
+                    <p>equipe.esy@gmail.com</p>
                 </div>
             </footer>
 

@@ -19,7 +19,7 @@
 }
 
 #root {
-  max-width: 1920px;
+  max-width: 2420px;
 }
 
 body {
@@ -203,31 +203,66 @@ button:focus-visible {
 }
 
 
-/* teste buguer */
+
+/* testes */
+.overlay::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+/* Estilos do menu */
 .hamburger {
   display: none;
   font-size: 30px;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 700px) {
   .links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      padding: 10px 0;
-      z-index: 1;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100vh;
+    padding: 10px 40px;
+    background-color: white;
+    z-index: 1;
+    align-items: flex-end;
+    font-size: 14px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
   }
 
   .links.open {
-      display: flex;
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .links.open .hamburger {
+    margin-top: 10px;
   }
 
   .hamburger {
-      display: block;
+    display: block;
+  }
+
+  .links.open a {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .links {
+    background-color: #1D222C;
   }
 }

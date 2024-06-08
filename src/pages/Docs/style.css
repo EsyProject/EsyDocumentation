@@ -147,15 +147,16 @@ a.sub-menu-item {
 }
 
 .links a {
-    color: #A2A3A4;
+    color: currentColor;
+    opacity: .5;
     font-size: 12px;
     font-weight: 500;
     transition: .25s;
 }
 
 .links a:hover {
-    color: #17181B;
     font-weight: 600;
+    opacity: 1;
 }
 
 /* SearchBar.css */
@@ -243,13 +244,13 @@ input[type="text"]:focus {
         color: #fff;
     }
 
-    .links a {
+    /* .links a {
         color: #A2A3A4;
     }
 
     .links a:hover {
         color: #ffffff;
-    }
+    } */
 
     body::-webkit-scrollbar {
         width: 10px;

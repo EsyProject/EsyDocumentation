@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AiOutlineRight } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 import "./style.css";
 
@@ -16,11 +17,11 @@ export default function Home() {
     };
 
 
-    //teste de burguer
-    const [isOpen, setIsOpen] = useState(false);
+    // configs do menu hamburguer
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsOpen(!isOpen);
+        setMenuOpen(!menuOpen);
     };
 
     return (
@@ -32,14 +33,18 @@ export default function Home() {
                         <p className="esy">ESY</p>
                     </div>
 
-                    <div className={`links ${isOpen ? 'open' : ''}`}>
-                        <a href="#">Docs</a>
-                        <a href="#">Guia do Usuário</a>
-                        <a href="#">Desenvolvedores</a>
-                    </div>
-
-                    <div className="hamburger" onClick={toggleMenu}>
-                        &#9776;
+                    <div className={`app ${menuOpen ? 'overlay' : ''}`}>
+                        <div className="hamburger" onClick={toggleMenu}>
+                            {menuOpen ? ' ' : '☰'}
+                        </div>
+                        <div className={`links ${menuOpen ? 'open' : ''}`}>
+                            <div className="hamburger" onClick={toggleMenu}>
+                                {menuOpen ? '✕' : '☰'}
+                            </div>
+                            <Link to="/">Home</Link>
+                            <Link to="/devs">Documentação</Link>
+                            <Link to="/devs">Desenvolvedores</Link>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -62,7 +67,7 @@ export default function Home() {
 
                 <section className="container-section-1">
                     <div className="container-section-child">
-                        <img src="/assets/images/event_creation_screen.png" alt="scr" />
+                        <img src="/assets/images/event_creation_screen.png" />
                         <text>
                             <h2>Criação de eventos</h2>
                             <p>Em apenas uma única tela é possível criar um evento e já disponibilizá-lo aos colaboradores da sua equipe.</p>
@@ -75,10 +80,10 @@ export default function Home() {
                                 participação, feedback e pontos de destaque, ajudando os gestores a entenderem melhor o impacto de suas
                                 iniciativas.</p>
                         </text>
-                        <img src="/assets/images/event_analysis_dashboard_default_state.png" alt="scr" />
+                        <img src="/assets/images/event_analysis_dashboard_default_state.png" />
                     </div>
                     <div className="container-section-child">
-                        <img src="/assets/images/ticket_reservation_screen_contracted.png" alt="scr" />
+                        <img src="/assets/images/ticket_reservation_screen_contracted.png" />
                         <text>
                             <h2>Reserva prévia do ticket e autenticação do participante na entrada do evento</h2>
                             <p>A reserva antecipada de ingressos e a autenticação na entrada garantem uma experiência fluida e segura
@@ -91,7 +96,7 @@ export default function Home() {
                             <p>Um calendário interno lista todos os eventos disponíveis no mês, facilitando a coordenação de atividades,
                                 gerenciamento e otimização do tempo.</p>
                         </text>
-                        <img src="/assets/images/schedule_screen.png" alt="scr" />
+                        <img src="/assets/images/schedule_screen.png" />
                     </div>
                 </section>
                 <section className="container-section-2">
@@ -229,7 +234,7 @@ export default function Home() {
                     <p>© Robert Bosch Ltda. 2024, todos os direitos reservados</p>
                 </div>
                 <div className="contact">
-                    <p>Esy.bosch.br@gmail.com</p>
+                    <p>equipe.esy@gmail.com</p>
                 </div>
             </footer>
 
