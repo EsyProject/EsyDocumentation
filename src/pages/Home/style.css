@@ -229,25 +229,43 @@ main p {
     gap: 15px;
 }
 
-.primary-btn,
+a.primary-btn,
 .secondary-btn {
     height: 50px;
     width: 215px;
     border-radius: 7px;
     font-size: 16px;
     font-weight: 600;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.primary-btn {
+a.primary-btn {
+    text-decoration: none;
     border: none;
     color: #fff;
     background: linear-gradient(90.71deg, #00A5FF 0%, #005893 100%);
 }
 
+a.primary-btn:hover {
+    color: #fff;
+}
+
 .secondary-btn {
     color: #0096E8;
     background-color: transparent;
-    border: 2px solid #0096E8;
+    outline: 3px solid #0096E8; /* Ajuste a cor e a largura da borda */
+    outline-offset: -3px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.secondary-btn:hover {
+    color: #fff;
+    outline: none;
+    background: linear-gradient(90.71deg, #00A5FF 0%, #005893 100%);
 }
 
 main section img {

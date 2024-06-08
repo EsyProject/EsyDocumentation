@@ -56,8 +56,8 @@ export default function Home() {
                 <h1 className="slogan">O jeito Esy de planejar e gerenciar seus eventos</h1>
 
                 <div className="btns">
-                    <button className="primary-btn">Cadastre-se</button>
-                    <button className="secondary-btn">Documentação</button>
+                    <a className="primary-btn">Documentação</a>
+                    <Link to="/devs" className="secondary-btn">Desenvolvedores</Link>
                 </div>
 
                 <p>ESY Event System é o gerenciador de eventos da Bosch Campinas. Criado com o intuito de unificar o
