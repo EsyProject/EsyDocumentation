@@ -3,6 +3,7 @@ import { AiOutlineRight } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 import "./style.css";
+// teste
 
 export default function Devs() {
     const handleClick = () => {
