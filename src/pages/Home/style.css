@@ -781,3 +781,20 @@ footer .logo-footer> :first-child {
         padding: 60px 50px;
     }
 }
+
+p.personal-links {
+    margin-top: 15px;
+    text-align: left;
+}
+
+p.personal-links a {
+    text-decoration: none;
+    color: currentColor;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+p.personal-links a:hover {
+    color: #0088D4;
+}

@@ -25,6 +25,10 @@ export default function Devs() {
         setMenuOpen(!menuOpen);
     };
 
+    // email link
+    const subjectEmail = "Projeto ESY";
+    const bodyEmail = "Olá, gostaria de conversar sobre o projeto de TCC Bosch Esy...";
+
     return (
         <div>
             <div className="navbar">
@@ -65,6 +69,11 @@ export default function Devs() {
                             desafios, foi assim que cheguei nas áreas de UX e Dev. Participar do ESY me fez
                             evoluir e aprimorar minhas capacidades, além disso, dia após dia atuando, tive
                             cada vez mais certeza que é essa a minha vocação.</p>
+                        <p className="personal-links">
+                            <a href="">GitHub</a>
+                            <a href="">  |  Linkedin  |  </a>
+                            <a href="">Email</a>
+                        </p>
                     </div>
                     <div className="child">
                         <img src="/assets/images/kety.png" />
@@ -74,6 +83,11 @@ export default function Devs() {
                             a área tech, os projetos com foco no frontend atraíram minha atenção
                             e me fizeram buscar mais conhecimento. Trabalhar com o ESY me fez
                             crescer e acreditar mais no meu potencial.</p>
+                        <p className="personal-links">
+                            <a href="">GitHub</a>
+                            <a href="">  |  Linkedin  |  </a>
+                            <a href="">Email</a>
+                        </p>
                     </div>
                     <div className="child">
                         <img src="/assets/images/joao.png" />
@@ -84,6 +98,11 @@ export default function Devs() {
                             software, é um reflexo da nossa paixão e compromisso com a inovação. Durante
                             esta jornada, apliquei e expandi meus conhecimentos técnicos e habilidades
                             sociais.</p>
+                        <p className="personal-links">
+                            <a href="">GitHub</a>
+                            <a href="">  |  Linkedin  |  </a>
+                            <a href="">Email</a>
+                        </p>
                     </div>
                     <div className="child">
                         <img src="/assets/images/manu.png" />
@@ -93,6 +112,12 @@ export default function Devs() {
                             desafios, foi assim que cheguei nas áreas de UX e Dev. Participar do ESY me fez
                             evoluir e aprimorar minhas capacidades, além disso, dia após dia atuando, tive
                             cada vez mais certeza que é essa a minha vocação.</p>
+
+                        <p className="personal-links">
+                            <a href="https://github.com/rochamanuela">GitHub</a>
+                            <a href="">  |  Linkedin  |  </a>
+                            <a href={`mailto:${'manuela.souza@bosch.com'}?subject=${encodeURIComponent(subjectEmail)}&body=${encodeURIComponent(bodyEmail)}`}>Email</a>
+                        </p>
                     </div>
                 </div>
             </main>
