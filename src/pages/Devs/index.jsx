@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { AiOutlineRight } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-
 import "./style.css";
-// teste
 
 export default function Devs() {
     const handleClick = () => {
@@ -65,14 +63,14 @@ export default function Devs() {
                         <img src="/assets/images/bruno.png" />
                         <h1 className="dev-name">Bruno Gomes</h1>
                         <h2 className="dev-function">Dev Full Stack</h2>
-                        <p className="dev-bio">Sempre gostei muito de tudo que envolvia criatividade e
-                            desafios, foi assim que cheguei nas áreas de UX e Dev. Participar do ESY me fez
-                            evoluir e aprimorar minhas capacidades, além disso, dia após dia atuando, tive
-                            cada vez mais certeza que é essa a minha vocação.</p>
+                        <p className="dev-bio">Idealizar e desenvolver o BoschEsy foi um divisor de águas, 
+                        pois, durante esse período de 1 semestre me dedicando, eu consegui aprender muitas 
+                        coisas relacionadas a backend e aprendendo conceitos e frameworks novos.</p>
                         <p className="personal-links">
-                            <a href="">GitHub</a>
-                            <a href="">  |  Linkedin  |  </a>
-                            <a href="">Email</a>
+                            <a href="GitHub.com/BrnGomes0">GitHub</a>
+                            <a href="https://www.linkedin.com/in/bruno-willian-nogueira-gomes?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">  |  Linkedin  |  </a>
+                            <a href={`mailto:${'bruno.gomes3@gmail.com'}?subject=${encodeURIComponent(subjectEmail)}&body=${encodeURIComponent(bodyEmail)}`}>Email</a>
+
                         </p>
                     </div>
                     <div className="child">
@@ -84,9 +82,9 @@ export default function Devs() {
                             e me fizeram buscar mais conhecimento. Trabalhar com o ESY me fez
                             crescer e acreditar mais no meu potencial.</p>
                         <p className="personal-links">
-                            <a href="">GitHub</a>
-                            <a href="">  |  Linkedin  |  </a>
-                            <a href="">Email</a>
+                            <a href="Github.com/kethelynsantos">GitHub</a>
+                            <a href="https://www.linkedin.com/in/kethelyn-gabrielly-machado-dos-santos-6a2b68216?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">  |  Linkedin  |  </a>
+                            <a href={`mailto:${'kethelyn.santos@bosch.com'}?subject=${encodeURIComponent(subjectEmail)}&body=${encodeURIComponent(bodyEmail)}`}>Email</a>
                         </p>
                     </div>
                     <div className="child">
@@ -99,9 +97,9 @@ export default function Devs() {
                             esta jornada, apliquei e expandi meus conhecimentos técnicos e habilidades
                             sociais.</p>
                         <p className="personal-links">
-                            <a href="">GitHub</a>
-                            <a href="">  |  Linkedin  |  </a>
-                            <a href="">Email</a>
+                            <a href="https://github.com/JoaoCorreaSilva">GitHub</a>
+                            <a href="https://www.linkedin.com/in/jo%C3%A3o-eduardocorrea?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">  |  Linkedin  |  </a>
+                            <a href={`mailto:${'joaoeduardo.correa292@gmail.com'}?subject=${encodeURIComponent(subjectEmail)}&body=${encodeURIComponent(bodyEmail)}`}>Email</a>
                         </p>
                     </div>
                     <div className="child">
@@ -115,7 +113,7 @@ export default function Devs() {
 
                         <p className="personal-links">
                             <a href="https://github.com/rochamanuela">GitHub</a>
-                            <a href="">  |  Linkedin  |  </a>
+                            <a href="https://www.linkedin.com/in/rocha-manuela/">  |  Linkedin  |  </a>
                             <a href={`mailto:${'manuela.souza@bosch.com'}?subject=${encodeURIComponent(subjectEmail)}&body=${encodeURIComponent(bodyEmail)}`}>Email</a>
                         </p>
                     </div>
@@ -133,12 +131,6 @@ export default function Devs() {
                     <p>equipe.esy@gmail.com</p>
                 </div>
             </footer>
-
-            {/* <LocalButton text="teste aqui" onClick={handleClick} />
-
-            <Link to="/docs">
-                <button>Docs</button>
-            </Link> */}
         </div>
     );
 }
