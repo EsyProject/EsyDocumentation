@@ -56,7 +56,7 @@ export default function Home() {
                 <h1 className="slogan">O jeito Esy de planejar e gerenciar seus eventos</h1>
 
                 <div className="btns">
-                    <a className="primary-btn">Documentação</a>
+                    <a className="primary-btn" href="https://docs-docusaurus.vercel.app/">Documentação</a>
                     <Link to="/devs" className="secondary-btn">Desenvolvedores</Link>
                 </div>
 
