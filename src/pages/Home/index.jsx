@@ -42,7 +42,7 @@ export default function Home() {
                                 {menuOpen ? '✕' : '☰'}
                             </div>
                             <Link to="/">Home</Link>
-                            <Link to="/devs">Documentação</Link>
+                            <a href="https://docs-docusaurus.vercel.app/">Documentação</a>
                             <Link to="/devs">Desenvolvedores</Link>
                         </div>
                     </div>
